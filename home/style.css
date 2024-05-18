@@ -1,0 +1,337 @@
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-weight: 400;
+    font-style: normal; 
+    /* color: red;  */
+    
+} 
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-weight: 400;
+    font-style: normal; 
+    /* color: red;  */
+    
+} 
+
+/* header */
+
+header {
+    /* background-image: url("/asset/hermes-rivera-OX_en7CXMj4-unsplash.jpg"); */
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+
+/* navbar */
+
+nav {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    height: 70px;
+    align-items: center;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 20px -20px;
+    /* border-top: 5px solid rgb(106, 255, 0); */
+    /* animation: bigger linear;
+    animation-timeline: scroll(); */
+}
+
+  
+
+
+@keyframes bigger {
+    to {
+        height: 80px;
+    }
+}
+/* kogo fantasy */
+.nav-hero1 img {
+    padding-right: 10px;
+    margin-right: 15px;
+}
+
+.nav-hero2 {
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    /* height: 30px;
+    display: flex;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); */
+}   
+
+.nav-hero3 ul{
+    list-style-type: none;
+}
+
+.nav-hero3 li {
+    display: inline;
+    padding-left: 25px;
+}
+
+/* link navbar */
+.nav-hero3 a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-hero3 a:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    left: 0;
+    bottom: -10px;
+    /* background-color: #ff3c78; */
+    background-color: red;
+    transition: 0.3s;
+}
+
+
+.nav-hero3 a:hover {
+    color: #1a1a1a;
+}
+
+.nav-hero3 a:hover:after{
+    width: 100%;
+}
+
+input {
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #9999;
+    padding: 7px 10px;
+    border: 0,2px solid black;   
+}
+
+/* end navbar  */
+
+.content1 { 
+    margin: 90px 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid red; */
+}
+
+.content1 a {
+    text-decoration: none;
+    /* border: 2px solid red; */
+}
+
+.content1 p {
+    text-align: center;
+    
+}
+
+.kategori {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+.content1 h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+/* header */
+
+header {
+    /* background-image: url("/asset/hermes-rivera-OX_en7CXMj4-unsplash.jpg"); */
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+
+/* navbar */
+
+nav {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    height: 70px;
+    align-items: center;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 20px -20px;
+    /* border-top: 5px solid rgb(106, 255, 0); */
+    /* animation: bigger linear;
+    animation-timeline: scroll(); */
+}
+
+  
+
+
+@keyframes bigger {
+    to {
+        height: 80px;
+    }
+}
+/* kogo fantasy */
+.nav-hero1 img {
+    padding-right: 10px;
+    margin-right: 15px;
+}
+
+.nav-hero2 {
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    /* height: 30px;
+    display: flex;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); */
+}   
+
+.nav-hero3 ul{
+    list-style-type: none;
+}
+
+.nav-hero3 li {
+    display: inline;
+    padding-left: 25px;
+}
+
+/* link navbar */
+.nav-hero3 a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-hero3 a:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    left: 0;
+    bottom: -10px;
+    /* background-color: #ff3c78; */
+    background-color: red;
+    transition: 0.3s;
+}
+
+
+.nav-hero3 a:hover {
+    color: #1a1a1a;
+}
+
+.nav-hero3 a:hover:after{
+    width: 100%;
+}
+
+input {
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #9999;
+    padding: 7px 10px;
+    border: 0,2px solid black;   
+}
+
+/* end navbar  */
+
+.content1 { 
+    margin: 90px 0;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content1 a {
+    text-decoration: none;
+}
+
+.content1 p {
+    text-align: center;
+    
+}
+
+.kategori {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+.content1 h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* content 2 */
+
+.content2 {
+    background-color: rgb(255, 255, 255)   ;
+    width: 100%;
+    height: 100rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* gap: 1px; */
+    display: flex;
+    
+}
+
+.barang {
+display: flex;
+flex-direction: column;
+}
+
+
+
+.box {
+    width:350px;
+    height: 360px;
+    border: 2px solid black;
+    /* margin-right: 5px; */
+}
+
