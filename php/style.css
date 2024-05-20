@@ -1,0 +1,381 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Header Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.header {
+    background-image: url("/PROJEK_KEJURUAN/asset/background4.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    height: 40vh;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    flex-direction: column;
+    transition: background-image 1s ease; /* Transisi perubahan background */
+}
+
+.header h1 {
+    font-size: 50px;
+    color: #fff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.search-container{
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+                inset -4px -4px 6px 0 rgba(255,255,255,.2),
+                inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+        
+.search-container:hover > .search-input{
+    width: 400px;
+}
+        
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+}
+        
+.search-container .search-btn .fas{
+    color: #5cbdbb;
+}
+        
+@keyframes hoverShake {
+    0% {transform: skew(0deg,0deg);}
+    25% {transform: skew(5deg, 5deg);}
+    75% {transform: skew(-5deg, -5deg);}
+    100% {transform: skew(0deg,0deg);}
+}
+        
+.search-container:hover{
+    animation: hoverShake 0.15s linear 3;
+}
+        
+/* Navigation Styles */
+nav {
+    background-color: rgb(184, 184, 184);
+    display: flex;
+    height: 70px;
+    align-items: center;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 20px -20px;
+    z-index: 1000; /* Menentukan posisi navbar di depan */
+}
+        
+.nav-hero1 img {
+    padding-right: 10px;
+    margin-right: 15px;
+}
+        
+.nav-hero2 {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+        
+.nav-hero3 ul {
+    list-style-type: none;
+}
+        
+.nav-hero3 li {
+    display: inline;
+    padding-left: 25px;
+}
+        
+.nav-hero3 a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+        
+.nav-hero3 a:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    background-color: red;
+    transition: 0.3s;
+}
+        
+.nav-hero3 a:hover,
+.nav-hero3 a:hover:after {
+    color: #1a1a1a;
+    width: 100%;
+}
+        
+/* Input Styles */
+input {
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #9999;
+    padding: 7px 10px;
+    border: 2px solid black;   
+}
+        
+/* Content Styles */
+.content1 { 
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(235, 235, 235); */
+}
+        
+.content1 a {
+    text-decoration: none;
+}
+        
+.content1 p {
+    text-align: center;
+}
+        
+/* Category Container Styles */
+.kategori-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* background-color: #de7a22; */
+}
+        
+.kategori-item1 {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
+    background:url("/PROJEK_KEJURUAN/asset/kategori1.jpg") ;
+    background-size: cover;
+    /* background-color: #F4CC70; */
+}
+
+.kategori-item2, .kategori-item3, .kategori-item4 {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    padding: 120px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
+    background:url("/PROJEK_KEJURUAN/asset/kategori1.jpg") ;
+    background-size: cover;
+    /* background-color: #F4CC70; */
+}
+    
+.kategori-item1:hover, .kategori-item2:hover, .kategori-item3:hover, .kategori-item4:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+        
+.kategori-item1 p, .kategori-item2 p, .kategori-item3 p, .kategori-item4 p {
+    text-align: left; ;
+    /* display: flex;
+    justify-content: flex-start; */
+    color: #b2bec3;
+    padding-top: 0 8px;
+}
+        
+.kategori-item1 button, .kategori-item2 button, .kategori-item3 button, .kategori-item4 button {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: aqua;
+}
+        
+/* Gallery Styles */
+.gallery {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+        
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.content {
+    width: 300px;
+    margin: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition:.4s;
+    background: #f2f2f2;
+}
+        
+.content:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+        
+.content img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+        
+.content p {
+    text-align: center;
+    color: #b2bec3;
+    padding-top: 0 8px;
+}
+        
+.content h6 {
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+        
+.content button {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    background-color: aqua;
+}
+        
+.material-symbols-outlined {
+    transform: scale(1.5);
+}
+        
+/* Responsive Styles */
+@media(max-width:750px) {
+    .content {
+        width: 100%;
+    }
+}
+        
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+        
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+        
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+        
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+        
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+        
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#text {
+    font-size: 7.6vw;
+}
+
